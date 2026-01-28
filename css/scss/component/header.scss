@@ -1,0 +1,106 @@
+/****** Header ***********/
+
+header {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+.recherche {
+    display: flex;
+    height: 49px;
+    max-width: 377px;
+    width: 100%;
+
+    .icon {
+        width: 50px;
+        min-width: 50px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        background: var(--main-bg-color);
+        display: flex;
+        justify-content: center;    
+        align-items: center;
+    }
+
+    input {
+        padding: 20px;
+        border: none;
+        border-top: 2px var(--main-bg-color) solid;
+        border-bottom: 2px var(--main-bg-color) solid;
+        @extend .highlight;
+        width: 80%;
+    }
+
+    button {
+        background-color: var(--main-color);
+        @extend .highlight;
+        color: white;
+        border: none;
+        padding: 15px 16px;
+
+        &.search {
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;      
+        }
+
+        &.search-icon {
+            border-radius: 15px;
+        }
+    }
+}
+
+.filtres {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    .buttons {   
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    button {
+        height: 50px;
+        border-radius: 25px;
+        border-width: 2px;
+        padding: 0 19px;
+        border: 2px solid var(--border);
+        font-weight: 700;
+        background: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: var(--filter-bg-color);
+    }
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .circle {
+        border: 1px solid var(--border);
+        height: 24px;
+        width: 24px;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

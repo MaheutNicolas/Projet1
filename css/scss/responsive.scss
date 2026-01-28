@@ -1,0 +1,134 @@
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+    .hebergements-and-populaires {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .hebergements {
+        width: 100%;
+    }
+
+    .populaires {
+        width: 100%;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .populaires-cards a {
+        width: 30%;
+    }
+
+    .populaires-cards .card-title {
+        font-size: 14px;
+    }
+
+    .populaires-cards .card-subtitle {
+        font-size: 13px;
+    }
+
+    .activite {
+        --img-height: 200px;
+    }
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+    /* ... */
+
+    .main-container {
+        padding: 0;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    nav {
+        --height: 115px;
+        flex-direction: column;
+
+        ul {
+            width: 100%;
+            padding: 0;
+            gap: 0;
+        }
+
+        li {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        a {
+            width: 100%;
+            align-items: start;
+            justify-content: center;
+        }
+
+        a:hover, .selected {
+            border-top: none;
+            border-bottom: 2px var(--main-color) solid;
+        }
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    .recherche {
+        button.search-icon {
+            border-radius: 15px;
+            margin-left: -20px;
+        }
+    }
+
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+        gap: 0;
+
+        section {
+            border-radius: 0;
+            padding: 30px 20px;
+        }
+
+        .hebergements {
+            background-color: white;
+        }
+    }
+
+    .populaires-cards {
+        flex-direction: column;
+
+        a {
+            width: 100%;
+        }
+    }
+
+    .hebergements-cards{
+        grid-template-columns: 1fr;
+    }
+
+    .activite {
+        --img-height: 141px;
+
+        .cards {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+    }
+}

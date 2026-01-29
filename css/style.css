@@ -98,7 +98,8 @@ nav {
   nav a {
     height: 35px;
     display: flex;
-    align-items: end; }
+    align-items: end;
+    border-top: 2px solid transparent; }
   nav a:hover, nav .selected {
     border-top: 2px var(--main-color) solid;
     color: var(--main-color); }
@@ -379,7 +380,9 @@ footer {
     nav a {
       width: 100%;
       align-items: start;
-      justify-content: center; }
+      justify-content: center;
+      border-top: none;
+      border-bottom: 2px var(--main-bg-color) solid; }
     nav a:hover, nav .selected {
       border-top: none;
       border-bottom: 2px var(--main-color) solid; }

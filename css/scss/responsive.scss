@@ -93,6 +93,8 @@
             width: 100%;
             align-items: start;
             justify-content: center;
+            border-top: none;
+            border-bottom: 2px var(--main-bg-color) solid;
         }
 
         a:hover, .selected {

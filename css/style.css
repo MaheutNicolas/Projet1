@@ -104,12 +104,12 @@ nav {
     color: var(--main-color); }
 
 /****** Header ***********/
-header {
+.recherche-et-filtres {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
   gap: 35px; }
-  header .title {
+  .recherche-et-filtres .title {
     display: flex;
     flex-direction: column;
     gap: 8px; }
@@ -144,6 +144,9 @@ header {
       border-bottom-right-radius: 15px; }
     .recherche button.search-icon {
       border-radius: 15px; }
+
+.fa-person {
+  font-size: 18px; }
 
 .filtres {
   display: flex;
@@ -381,7 +384,7 @@ footer {
       border-top: none;
       border-bottom: 2px var(--main-color) solid; }
 
-  header {
+  .recherche-et-filtres {
     padding: 20px; }
 
   .recherche button.search-icon {

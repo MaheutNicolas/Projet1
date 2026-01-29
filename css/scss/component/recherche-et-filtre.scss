@@ -1,6 +1,6 @@
 /****** Header ***********/
 
-header {
+.recherche-et-filtres {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
@@ -55,6 +55,10 @@ header {
             border-radius: 15px;
         }
     }
+}
+
+.fa-person {
+    font-size: 18px;
 }
 
 .filtres {

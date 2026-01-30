@@ -11,6 +11,13 @@
 
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+    .filtres {
+        flex-direction: column;
+        gap: 20px;
+        align-items: start;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
         gap: 50px;
@@ -111,6 +118,20 @@
         button.search-icon {
             border-radius: 15px;
             margin-left: -20px;
+        }
+    }
+
+    .filtres {
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 20px;
+            column-gap: 10px;
+            width: 100%;
+
+            button {
+                width: 100%;
+            }
         }
     }
 
